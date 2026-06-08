@@ -1,0 +1,286 @@
+/* ════════════════════════════════════════════════
+   Sistema Universitario — Estilos Globales
+   Paleta: azul institucional + grises limpios
+   ════════════════════════════════════════════════ */
+
+/* ── Variables de paleta ──────────────────────── */
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -color-primary:      #2c5f8a;
+    -color-primary-dark: #1e4266;
+    -color-accent:       #3498db;
+    -color-success:      #27ae60;
+    -color-danger:       #e74c3c;
+    -color-warning:      #f39c12;
+    -color-bg:           #f0f2f5;
+    -color-surface:      #ffffff;
+    -color-border:       #d1d9e0;
+    -color-text:         #2d3748;
+    -color-text-muted:   #718096;
+}
+
+/* ── Fondo general ───────────────────────────── */
+.root-pane {
+    -fx-background-color: -color-bg;
+}
+
+/* ── Tarjeta de login ─────────────────────────── */
+.login-card {
+    -fx-background-color: -color-surface;
+    -fx-background-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0, 0, 4);
+    -fx-padding: 0;
+    -fx-min-width: 380;
+    -fx-max-width: 420;
+}
+
+.login-header {
+    -fx-background-color: -color-primary;
+    -fx-background-radius: 16 16 0 0;
+    -fx-padding: 32 24 28 24;
+}
+
+.login-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.login-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: rgba(255,255,255,0.8);
+}
+
+.login-form {
+    -fx-padding: 28 32 20 32;
+}
+
+.login-hint {
+    -fx-background-color: #f7fafc;
+    -fx-background-radius: 0 0 16 16;
+    -fx-padding: 16 24 20 24;
+    -fx-border-color: -color-border;
+    -fx-border-width: 1 0 0 0;
+}
+
+.hint-title {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-text-muted;
+}
+
+.hint-text {
+    -fx-font-size: 11px;
+    -fx-text-fill: -color-text-muted;
+}
+
+/* ── Barra superior ───────────────────────────── */
+.topbar {
+    -fx-background-color: -color-primary;
+    -fx-padding: 12 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0, 0, 2);
+}
+
+.topbar-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.topbar-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: rgba(255,255,255,0.85);
+}
+
+/* ── Secciones y paneles ──────────────────────── */
+.tab-section {
+    -fx-padding: 20;
+    -fx-background-color: -color-surface;
+}
+
+.form-panel {
+    -fx-padding: 20;
+    -fx-background-color: #fafbfc;
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 0 0 1;
+}
+
+.section-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-primary;
+}
+
+/* ── Formularios ──────────────────────────────── */
+.form-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-text;
+}
+
+.form-input {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 8 12;
+    -fx-font-size: 13px;
+    -fx-pref-height: 36;
+}
+
+.form-input:focused {
+    -fx-border-color: -color-accent;
+    -fx-effect: dropshadow(gaussian, rgba(52,152,219,0.3), 6, 0, 0, 0);
+}
+
+/* ── Botones ──────────────────────────────────── */
+.btn-primary {
+    -fx-background-color: -color-primary;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: -color-primary-dark;
+}
+
+.btn-primary:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.btn-secondary {
+    -fx-background-color: transparent;
+    -fx-border-color: -color-border;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: -color-text;
+    -fx-font-size: 13px;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #edf2f7;
+}
+
+.btn-danger {
+    -fx-background-color: -color-danger;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #c0392b;
+}
+
+.btn-logout {
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-padding: 6 14;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.btn-logout:hover {
+    -fx-background-color: rgba(255,255,255,0.25);
+}
+
+/* ── TabPane ──────────────────────────────────── */
+.main-tabpane {
+    -fx-background-color: -color-surface;
+}
+
+.main-tabpane .tab-header-area .tab-header-background {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 0 1 0;
+}
+
+.main-tabpane .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 8 16;
+    -fx-font-size: 13px;
+}
+
+.main-tabpane .tab:selected {
+    -fx-background-color: -color-primary;
+}
+
+.main-tabpane .tab:selected .tab-label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* ── TableView ────────────────────────────────── */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.table-view .column-header {
+    -fx-background-color: #f7fafc;
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 10 8;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-text-fill: -color-text;
+}
+
+.table-row-cell {
+    -fx-border-color: transparent;
+    -fx-background-color: white;
+    -fx-padding: 4;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9fafb;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #ebf5fb;
+    -fx-border-color: -color-accent;
+    -fx-border-width: 0 0 0 3;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #edf2f7;
+}
+
+/* ── Promedio preview ─────────────────────────── */
+.promedio-preview {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-primary;
+}
+
+/* ── ComboBox ─────────────────────────────────── */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 13px;
+}
+
+.combo-box:focused {
+    -fx-border-color: -color-accent;
+}
+
+/* ── SplitPane ────────────────────────────────── */
+.split-pane > .split-pane-divider {
+    -fx-background-color: -color-border;
+    -fx-padding: 0 1;
+}
