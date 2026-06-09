@@ -6,23 +6,19 @@ public class Profesor extends Usuario {
     private String numeroEmpleado;
 
     public Profesor() {
-        this.setTipo(TipoUsuario.PROFESOR);
+        setTipo(TipoUsuario.PROFESOR);
     }
 
     public Profesor(int id, String nombre, String correo, String contrasena, String numeroEmpleado) {
         super(id, nombre, correo, contrasena, TipoUsuario.PROFESOR);
         this.numeroEmpleado = numeroEmpleado;
     }
+    
+    public String getNumeroEmpleado() { return numeroEmpleado; }
+    public void setNumeroEmpleado(String numeroEmpleado) { this.numeroEmpleado = numeroEmpleado; }
 
-    public String getNumeroEmpleado() {
-        return this.numeroEmpleado;
-    }
-
-    public void setNumeroEmpleado(String numeroEmpleado) {
-        this.numeroEmpleado = numeroEmpleado;
-    }
-
+    @Override
     public String toString() {
-        return getNombre() + " [" + this.numeroEmpleado + "]";
+        return getNombre() + " [" + numeroEmpleado + "]";
     }
 }
