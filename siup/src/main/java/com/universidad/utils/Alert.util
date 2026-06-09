@@ -20,3 +20,21 @@ public static void info(String titulo, String mensaje) {
         alert.setContentText(mensaje);
         alert.showAndWait();
     }
+
+    public static void advertencia(String titulo, String mensaje) {
+        Alert alert = new Alert(AlertType.WARNING);
+        alert.setTitle(titulo);
+        alert.setHeaderText((String)null);
+        alert.setContentText(mensaje);
+        alert.showAndWait();
+    }
+ public static boolean confirmar(String titulo, String mensaje) {
+        Alert alert = new Alert(AlertType.CONFIRMATION);
+        alert.setTitle(titulo);
+        alert.setHeaderText((String)null);
+        alert.setContentText(mensaje);
+        Optional<ButtonType> result = alert.showAndWait();
+        return result.isPresent() && result.get() == ButtonType.OK;
+    }
+}
+
