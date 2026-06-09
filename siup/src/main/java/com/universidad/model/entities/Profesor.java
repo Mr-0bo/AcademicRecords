@@ -13,7 +13,7 @@ public class Profesor extends Usuario {
         super(id, nombre, correo, contrasena, TipoUsuario.PROFESOR);
         this.numeroEmpleado = numeroEmpleado;
     }
-    
+
     public String getNumeroEmpleado() { return numeroEmpleado; }
     public void setNumeroEmpleado(String numeroEmpleado) { this.numeroEmpleado = numeroEmpleado; }
 
