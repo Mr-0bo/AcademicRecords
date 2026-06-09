@@ -1,7 +1,6 @@
-package main.java.com.universidad.model.entities;
+package com.universidad.model.entities;
 
-public class Profesor {
-  public class Profesor extends Usuario {
+public class Profesor extends Usuario {
     private String numeroEmpleado;
 
     public Profesor() {
