@@ -1,7 +1,6 @@
-package main.java.com.universidad.model.entities;
+package com.universidad.model.entities;
 
 public class Carrera {
-  public class Carrera {
     private int id;
     private String nombre;
 
