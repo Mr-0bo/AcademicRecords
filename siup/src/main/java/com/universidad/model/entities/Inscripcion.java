@@ -37,4 +37,19 @@ public class Inscripcion {
         return this.idGrupo;
     }
 
+    public void setIdGrupo(int idGrupo) {
+        this.idGrupo = idGrupo;
+    }
+
+    public String getNombreAlumno() {
+        return this.nombreAlumno;
+    }
+
+    public void setNombreAlumno(String nombreAlumno) {
+        this.nombreAlumno = nombreAlumno;
+    }
+
+    public String getMatricula() {
+        return this.matricula;
+    }
 }
