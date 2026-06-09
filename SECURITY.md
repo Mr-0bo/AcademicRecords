@@ -422,7 +422,6 @@ Para reportar problemas de seguridad, se recomienda contactar al equipo responsa
 Equipo responsable del proyecto:
 
 * Gabriel Espinosa
-* Iancarlo Sigler
 * Mario Garcia 
 * Rafael Morales
 
