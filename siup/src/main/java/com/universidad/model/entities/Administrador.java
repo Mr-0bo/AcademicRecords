@@ -17,4 +17,8 @@ public class Administrador {
     public void setNumeroEmpleado(String numeroEmpleado) {
         this.numeroEmpleado = numeroEmpleado;
     }
+    public String toString() {
+        String var10000 = this.getNombre();
+        return "Admin: " + var10000 + " [" + this.numeroEmpleado + "]";
+    }
 }
