@@ -17,5 +17,24 @@ public class Inscripcion {
         this.idGrupo = idGrupo;
     }
 
-    
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getIdAlumno() {
+        return this.idAlumno;
+    }
+
+    public void setIdAlumno(int idAlumno) {
+        this.idAlumno = idAlumno;
+    }
+
+    public int getIdGrupo() {
+        return this.idGrupo;
+    }
+
 }
