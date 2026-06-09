@@ -51,4 +51,28 @@ public class ConfiguracionEvaluacion {
     public void setPorcentajeParciales(double v) {
         this.porcentajeParciales = v;
     }
+
+    public double getPorcentajeActividades() {
+        return this.porcentajeActividades;
+    }
+
+    public void setPorcentajeActividades(double v) {
+        this.porcentajeActividades = v;
+    }
+
+    public double getPorcentajeProyecto() {
+        return this.porcentajeProyecto;
+    }
+
+    public void setPorcentajeProyecto(double v) {
+        this.porcentajeProyecto = v;
+    }
+
+    public double getCalificacionMinima() {
+        return this.calificacionMinima;
+    }
+
+    public void setCalificacionMinima(double v) {
+        this.calificacionMinima = v;
+    }
 }
