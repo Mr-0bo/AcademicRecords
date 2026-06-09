@@ -58,4 +58,9 @@ public class Usuario {
     public void setTipo(TipoUsuario tipo) {
         this.tipo = tipo;
     }
+
+    public String toString() {
+        int var10000 = this.id;
+        return "Usuario{id=" + var10000 + ", nombre='" + this.nombre + "', correo='" + this.correo + "', tipo=" + String.valueOf(this.tipo) + "}";
+    }
 }
