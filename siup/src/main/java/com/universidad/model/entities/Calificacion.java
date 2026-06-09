@@ -102,4 +102,19 @@ public class Calificacion {
         this.nombreAlumno = nombreAlumno;
     }
 
+     public String getMatricula() {
+        return this.matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public double getPromedioParciales() {
+        return (this.parcial1 + this.parcial2 + this.parcial3) / (double)3.0F;
+    }
+
+    public String getEstatusTexto() {
+        return this.aprobado ? "Aprobado" : "Reprobado";
+    }
 }
