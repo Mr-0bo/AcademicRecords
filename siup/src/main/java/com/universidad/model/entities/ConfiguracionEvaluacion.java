@@ -12,4 +12,19 @@ public class ConfiguracionEvaluacion {
 
     public ConfiguracionEvaluacion() {
     }
+
+     public ConfiguracionEvaluacion(int id, int idMateria, double porcentajeParciales, double porcentajeActividades, double porcentajeProyecto, double calificacionMinima, int faltasMaximas) {
+        this.id = id;
+        this.idMateria = idMateria;
+        this.porcentajeParciales = porcentajeParciales;
+        this.porcentajeActividades = porcentajeActividades;
+        this.porcentajeProyecto = porcentajeProyecto;
+        this.calificacionMinima = calificacionMinima;
+        this.faltasMaximas = faltasMaximas;
+    }
+
+    public boolean esValida() {
+        double suma = this.porcentajeParciales + this.porcentajeActividades + this.porcentajeProyecto;
+        return Math.abs(suma - (double)100.0F) < 0.001;
+    }
 }
