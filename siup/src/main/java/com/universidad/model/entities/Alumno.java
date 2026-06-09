@@ -9,4 +9,9 @@ public class Alumno {
     public Alumno() {
         this.setTipo(TipoUsuario.ALUMNO);
     }
+    public Alumno(int id, String nombre, String correo, String contrasena, String matricula, int idCarrera) {
+        super(id, nombre, correo, contrasena, TipoUsuario.ALUMNO);
+        this.matricula = matricula;
+        this.idCarrera = idCarrera;
+    }
 }
