@@ -37,4 +37,3 @@ public static void info(String titulo, String mensaje) {
         return result.isPresent() && result.get() == ButtonType.OK;
     }
 }
-
