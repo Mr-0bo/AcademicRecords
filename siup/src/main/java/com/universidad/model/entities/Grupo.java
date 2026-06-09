@@ -1,7 +1,6 @@
-package main.java.com.universidad.model.entities;
+package com.universidad.model.entities;
 
 public class Grupo {
-      public class Grupo {
     private int id;
     private int idMateria;
     private int idProfesor;
