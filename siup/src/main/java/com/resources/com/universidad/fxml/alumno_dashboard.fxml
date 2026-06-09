@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.universidad.controller.AlumnoDashboardController"
+            styleClass="root-pane">
+
+    <!-- TOP BAR -->
+    <top>
+        <HBox styleClass="topbar" alignment="CENTER_LEFT" spacing="16">
+            <Label fx:id="lblBienvenida" text="Mis calificaciones" styleClass="topbar-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Cerrar sesión" onAction="#onCerrarSesion" styleClass="btn-logout"/>
+        </HBox>
+    </top>
+
+    <!-- CONTENIDO -->
+    <center>
+        <VBox spacing="16" styleClass="tab-section">
+            <Label text="Historial de calificaciones" styleClass="section-title"/>
+
+            <TableView fx:id="tablaCalificaciones" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="colMateria"     text="Materia"      prefWidth="200"/>
+                    <TableColumn fx:id="colPeriodo"     text="Periodo"      prefWidth="90"/>
+                    <TableColumn fx:id="colP1"          text="Parcial 1"    prefWidth="80"/>
+                    <TableColumn fx:id="colP2"          text="Parcial 2"    prefWidth="80"/>
+                    <TableColumn fx:id="colP3"          text="Parcial 3"    prefWidth="80"/>
+                    <TableColumn fx:id="colActividades" text="Actividades"  prefWidth="90"/>
+                    <TableColumn fx:id="colProyecto"    text="Proyecto"     prefWidth="80"/>
+                    <TableColumn fx:id="colFinal"       text="Final"        prefWidth="70"/>
+                    <TableColumn fx:id="colEstatus"     text="Estatus"      prefWidth="100"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>
+
