@@ -82,4 +82,24 @@ public class Calificacion {
         return this.promedioFinal;
     }
 
+    public void setPromedioFinal(double promedioFinal) {
+        this.promedioFinal = promedioFinal;
+    }
+
+    public boolean isAprobado() {
+        return this.aprobado;
+    }
+
+    public void setAprobado(boolean aprobado) {
+        this.aprobado = aprobado;
+    }
+
+    public String getNombreAlumno() {
+        return this.nombreAlumno;
+    }
+
+    public void setNombreAlumno(String nombreAlumno) {
+        this.nombreAlumno = nombreAlumno;
+    }
+
 }
