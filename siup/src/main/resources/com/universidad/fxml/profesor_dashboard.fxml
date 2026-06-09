@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.universidad.controller.ProfesorDashboardController"
+            styleClass="root-pane">
+
+    <!-- TOP BAR -->
+    <top>
+        <HBox styleClass="topbar" alignment="CENTER_LEFT" spacing="16">
+            <Label fx:id="lblBienvenida" text="Panel Profesor" styleClass="topbar-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label text="Grupo:" styleClass="topbar-label"/>
+            <ComboBox fx:id="cmbGrupos" prefWidth="280"/>
+            <Button text="Cerrar sesión" onAction="#onCerrarSesion" styleClass="btn-logout"/>
+        </HBox>
+    </top>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <center>
+        <SplitPane dividerPositions="0.62" styleClass="main-split">
+
+            <!-- IZQUIERDA: Tabla de alumnos y calificaciones -->
+            <VBox spacing="8" styleClass="tab-section">
+                <Label text="Calificaciones del grupo" styleClass="section-title"/>
+                <TableView fx:id="tablaCalificaciones" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colNombre" text="Alumno" prefWidth="160"/>
+                        <TableColumn fx:id="colMatricula" text="Matrícula" prefWidth="90"/>
+                        <TableColumn fx:id="colP1" text="P1" prefWidth="55"/>
+                        <TableColumn fx:id="colP2" text="P2" prefWidth="55"/>
+                        <TableColumn fx:id="colP3" text="P3" prefWidth="55"/>
+                        <TableColumn fx:id="colAct" text="Act." prefWidth="55"/>
+                        <TableColumn fx:id="colProy" text="Proy." prefWidth="55"/>
+                        <TableColumn fx:id="colFinal" text="Final" prefWidth="65"/>
+                        <TableColumn fx:id="colEstatus" text="Estatus" prefWidth="90"/>
+                    </columns>
+                </TableView>
+            </VBox>
+ <!-- DERECHA: Formulario de edición -->
+            <VBox spacing="14" styleClass="form-panel">
+                <Label text="Registrar / Editar calificación" styleClass="section-title"/>
+                <Label text="Selecciona un alumno en la tabla para editar." styleClass="hint-text"/>
+
+                <GridPane hgap="12" vgap="10">
+                    <Label text="Parcial 1" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="form-label"/>
+                    <TextField fx:id="txtP1" promptText="0.0" GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="form-input"/>
+
+                    <Label text="Parcial 2" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="form-label"/>
+                    <TextField fx:id="txtP2" promptText="0.0" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="form-input"/>
+
+                    <Label text="Parcial 3" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="form-label"/>
+                    <TextField fx:id="txtP3" promptText="0.0" GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="form-input"/>
+
+                    <Label text="Actividades" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="form-label"/>
+                    <TextField fx:id="txtActividades" promptText="0.0" GridPane.rowIndex="3" GridPane.columnIndex="1" styleClass="form-input"/>
+
+                    <Label text="Proyecto" GridPane.rowIndex="4" GridPane.columnIndex="0" styleClass="form-label"/>
+                    <TextField fx:id="txtProyecto" promptText="0.0" GridPane.rowIndex="4" GridPane.columnIndex="1" styleClass="form-input"/>
+                </GridPane>
+
+                <Separator/>
+
+                <HBox alignment="CENTER_LEFT" spacing="12">
+                    <Label text="Promedio estimado:" styleClass="form-label"/>
+                    <Label fx:id="lblPromedioPreview" text="—" styleClass="promedio-preview"/>
+                </HBox>
+
+                <HBox spacing="8">
+                    <Button text="Calcular" onAction="#onCalcularPreview"
+                            styleClass="btn-secondary" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                    <Button text="Guardar calificación" onAction="#onGuardarCalificacion"
+                            styleClass="btn-primary" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                </HBox>
+            </VBox>
+
+        </SplitPane>
+    </center>
+</BorderPane>
