@@ -52,4 +52,12 @@ public class Inscripcion {
     public String getMatricula() {
         return this.matricula;
     }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String toString() {
+        return this.nombreAlumno != null ? this.nombreAlumno : "Inscripción #" + this.id;
+    }
 }
