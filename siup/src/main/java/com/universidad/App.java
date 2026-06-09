@@ -1,8 +1,39 @@
-
 package com.universidad;
 
-public class App extends javafx.application.Application {
-    public App() { /* compiled code */ }
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-    public void start(javafx.stage.Stage primaryStage) { /* compiled code */ }
+import java.net.URL;
+
+public class App extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        URL fxmlLocation = getClass().getResource("/com/universidad/fxml/login.fxml");
+
+        if (fxmlLocation == null) {
+            System.out.println("¡Error! No se encontró el archivo FXML.");
+            return;
+        }
+
+        FXMLLoader loader = new FXMLLoader(fxmlLocation);
+        Parent root = loader.load();
+
+        Scene scene = new Scene(root);
+
+        String css = getClass().getResource("/com/universidad/css/styles.css").toExternalForm();
+        scene.getStylesheets().add(css);
+
+        primaryStage.setTitle("Sistema Universitario");
+        primaryStage.setScene(scene);
+        primaryStage.centerOnScreen();
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 }
