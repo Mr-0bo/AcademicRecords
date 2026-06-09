@@ -1,5 +1,7 @@
 package com.universidad.model.entities;
 
+import com.universidad.model.enums.TipoUsuario;
+
 public class Usuario {
     private int id;
     private String nombre;
