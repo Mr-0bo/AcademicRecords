@@ -12,5 +12,23 @@ public class Grupo {
     public Grupo() {
     }
 
+      public Grupo(int id, int idMateria, int idProfesor, String periodo) {
+        this.id = id;
+        this.idMateria = idMateria;
+        this.idProfesor = idProfesor;
+        this.periodo = periodo;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getIdMateria() {
+        return this.idMateria;
+    }
 
 }
