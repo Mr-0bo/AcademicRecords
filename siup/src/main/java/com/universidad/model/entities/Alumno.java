@@ -25,4 +25,15 @@ public class Alumno {
     public int getIdCarrera() {
         return this.idCarrera;
     }
+    public void setIdCarrera(int idCarrera) {
+        this.idCarrera = idCarrera;
+    }
+
+    public String getNombreCarrera() {
+        return this.nombreCarrera;
+    }
+
+    public void setNombreCarrera(String nombreCarrera) {
+        this.nombreCarrera = nombreCarrera;
+    }
 }
