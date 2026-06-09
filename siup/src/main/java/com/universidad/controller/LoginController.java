@@ -52,15 +52,15 @@ public class LoginController {
             switch (usuario.getTipo()) {
                 case ADMIN -> {
                     System.out.println("[Login] Redirigiendo a Dashboard de Administrador...");
-                    NavigationUtil.navigate("com/universidad/fxml/admin_dashboard.fxml", "Administración");
+                    NavigationUtil.navigate("/com/universidad/fxml/admin_dashboard.fxml", "Administración");
                 }
                 case PROFESOR -> {
                     System.out.println("[Login] Redirigiendo a Panel de Profesor...");
-                    NavigationUtil.navigate("com/universidad/fxml/profesor_dashboard.fxml", "Panel Profesor");
+                    NavigationUtil.navigate("/com/universidad/fxml/profesor_dashboard.fxml", "Panel Profesor");
                 }
                 case ALUMNO -> {
                     System.out.println("[Login] Redirigiendo a Panel de Alumno...");
-                    NavigationUtil.navigate("com/universidad/fxml/alumno_dashboard.fxml", "Mis Calificaciones");
+                    NavigationUtil.navigate("/com/universidad/fxml/alumno_dashboard.fxml", "Mis Calificaciones");
                 }
                 default -> {
                     System.out.println("[Login] ERROR: Tipo de usuario desconocido.");
