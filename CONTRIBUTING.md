@@ -721,46 +721,7 @@ Esta separación permite que el sistema sea más ordenado y evita mezclar la ló
 
 ---
 
-## 14. Recomendaciones para futuras contribuciones
-
-Para futuras modificaciones del proyecto, se recomienda:
-
-1. Revisar la estructura antes de crear nuevos archivos.
-2. Crear una rama nueva para cada cambio importante.
-3. No trabajar directamente sobre la rama principal.
-4. Probar la funcionalidad antes de subirla.
-5. Revisar que los nombres sean claros.
-6. Evitar modificar archivos de otros integrantes sin avisar.
-7. Documentar cambios importantes.
-8. Mantener actualizados los archivos `README.md` y `CONTRIBUTING.md`.
-9. Usar Pull Requests para integrar cambios.
-10. Resolver conflictos de Git cuidadosamente.
-
----
-
-## 15. Correcciones de nombres recomendadas
-
-Para mantener una estructura profesional y evitar errores de escritura, se recomienda utilizar los siguientes nombres:
-
-| Nombre escrito originalmente | Nombre recomendado |
-| ---------------------------- | ------------------ |
-| `ENTITES`                    | `entities`         |
-| `CCS`                        | `css`              |
-| `REPOSITORYS`                | `repositories`     |
-| `CONFIGS`                    | `configs`          |
-| `CONTROLLERS`                | `controllers`      |
-| `UTILS`                      | `utils`            |
-| `ENUMS`                      | `enums`            |
-| `FXML`                       | `fxml`             |
-| `APP`                        | `app`              |
-| `MAIN`                       | `main`             |
-| `SERVICES`                   | `services`         |
-
-Se recomienda usar nombres de paquetes en minúsculas para seguir las convenciones comunes de Java.
-
----
-
-## 16. Resumen de aportaciones del equipo
+## 14. Resumen de aportaciones del equipo
 
 El equipo distribuyó el trabajo de forma modular, asignando a cada integrante una parte específica del proyecto.
 
@@ -776,20 +737,19 @@ En conjunto, las contribuciones permitieron desarrollar una aplicación organiza
 
 ---
 
-## 17. Créditos
+## 15. Créditos
 
 Este proyecto fue desarrollado de manera colaborativa por:
 
-* Gabriel
-* Iancarlo
-* Mario
-* Rafa
+* Gabriel Espinosa
+* Mario Garcia 
+* Rafael Morales 
 
 Cada integrante participó en módulos específicos del sistema, contribuyendo al desarrollo de una aplicación estructurada y funcional.
 
 ---
 
-## 18. Conclusión
+## 16. Conclusión
 
 Este archivo establece las reglas y lineamientos para contribuir correctamente al proyecto. La división de responsabilidades permitió que el equipo trabajara de forma ordenada y que cada módulo tuviera una función clara dentro de la arquitectura general.
 
