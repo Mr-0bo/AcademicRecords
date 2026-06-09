@@ -53,4 +53,12 @@ public class Materia {
     public String getNombreCarrera() {
         return this.nombreCarrera;
     }
+
+    public void setNombreCarrera(String nombreCarrera) {
+        this.nombreCarrera = nombreCarrera;
+    }
+
+    public String toString() {
+        return this.nombre + " (Sem. " + this.semestre + ")";
+    }
 }
