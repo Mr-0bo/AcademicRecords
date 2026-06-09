@@ -14,5 +14,28 @@ public class Calificacion {
     private String nombreAlumno;
     private String matricula;
 
+    public Calificacion() {
+    }
+
+    public Calificacion(int id, int idInscripcion) {
+        this.id = id;
+        this.idInscripcion = idInscripcion;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getIdInscripcion() {
+        return this.idInscripcion;
+    }
+
+    public void setIdInscripcion(int idInscripcion) {
+        this.idInscripcion = idInscripcion;
+    }
     
 }
