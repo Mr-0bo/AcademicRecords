@@ -7,4 +7,8 @@ public class Administrador {
     public Administrador() {
         this.setTipo(TipoUsuario.ADMIN);
     }
+    public Administrador(int id, String nombre, String correo, String contrasena, String numeroEmpleado) {
+        super(id, nombre, correo, contrasena, TipoUsuario.ADMIN);
+        this.numeroEmpleado = numeroEmpleado;
+    }
 }
