@@ -38,5 +38,24 @@ public class Usuario {
     public String getCorreo() {
         return this.correo;
     }
-    
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getContrasena() {
+        return this.contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
+    public TipoUsuario getTipo() {
+        return this.tipo;
+    }
+
+    public void setTipo(TipoUsuario tipo) {
+        this.tipo = tipo;
+    }
 }
