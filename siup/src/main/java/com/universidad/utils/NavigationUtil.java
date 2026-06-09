@@ -25,7 +25,7 @@ public class NavigationUtil {
             FXMLLoader loader = new FXMLLoader(resource);
             Parent root = (Parent)loader.load();
             Scene scene = new Scene(root);
-            URL cssResource = Thread.currentThread().getContextClassLoader().getResource("com/universidad/css/styles.css");
+            URL cssResource = Thread.currentThread().getContextClassLoader().getResource("/com/universidad/css/styles.css");
             if (cssResource != null) {
                 scene.getStylesheets().add(cssResource.toExternalForm());
             }
@@ -49,7 +49,7 @@ public class NavigationUtil {
             modal.initModality(Modality.APPLICATION_MODAL);
             modal.initOwner(primaryStage);
             Scene scene = new Scene(root);
-            scene.getStylesheets().add(NavigationUtil.class.getResource("/com/universidad/css/styles.css").toExternalForm());
+            scene.getStylesheets().add(NavigationUtil.class.getResource("/com/resources.com.universidad/css/styles.css").toExternalForm());
             modal.setScene(scene);
             modal.showAndWait();
         } catch (IOException e) {
