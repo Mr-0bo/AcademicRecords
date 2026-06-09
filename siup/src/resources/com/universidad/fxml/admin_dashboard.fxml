@@ -112,3 +112,38 @@
                     </VBox>
                 </SplitPane>
             </Tab>
+
+            <!-- ── TAB MATERIAS ── -->
+            <Tab text="📚  Materias">
+                <SplitPane dividerPositions="0.55">
+                    <VBox spacing="8" styleClass="tab-section">
+                        <Label text="Materias registradas" styleClass="section-title"/>
+                        <TableView fx:id="tablaMaterias" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="colMatNombre" text="Materia" prefWidth="200"/>
+                                <TableColumn fx:id="colMatCarrera" text="Carrera" prefWidth="180"/>
+                                <TableColumn fx:id="colMatSemestre" text="Semestre" prefWidth="80"/>
+                            </columns>
+                        </TableView>
+                    </VBox>
+                    <VBox spacing="12" styleClass="form-panel">
+                        <Label text="Nueva / Editar materia" styleClass="section-title"/>
+                        <Label text="Nombre" styleClass="form-label"/>
+                        <TextField fx:id="txtMatNombre" promptText="Programación OO" styleClass="form-input"/>
+                        <Label text="Carrera" styleClass="form-label"/>
+                        <ComboBox fx:id="cmbMatCarrera" maxWidth="Infinity"/>
+                        <Label text="Semestre" styleClass="form-label"/>
+                        <TextField fx:id="txtMatSemestre" promptText="3" styleClass="form-input"/>
+                        <HBox spacing="8">
+                            <Button text="Nuevo" onAction="#onNuevaMateria" styleClass="btn-secondary" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                            <Button text="Guardar" onAction="#onGuardarMateria" styleClass="btn-primary" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                            <Button text="Eliminar" onAction="#onEliminarMateria" styleClass="btn-danger" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                        </HBox>
+                    </VBox>
+                </SplitPane>
+            </Tab>
+
+        </TabPane>
+    </center>
+</BorderPane>
+
