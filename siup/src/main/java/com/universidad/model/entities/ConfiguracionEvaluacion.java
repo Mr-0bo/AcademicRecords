@@ -27,4 +27,28 @@ public class ConfiguracionEvaluacion {
         double suma = this.porcentajeParciales + this.porcentajeActividades + this.porcentajeProyecto;
         return Math.abs(suma - (double)100.0F) < 0.001;
     }
+
+        public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getIdMateria() {
+        return this.idMateria;
+    }
+
+    public void setIdMateria(int idMateria) {
+        this.idMateria = idMateria;
+    }
+
+    public double getPorcentajeParciales() {
+        return this.porcentajeParciales;
+    }
+
+    public void setPorcentajeParciales(double v) {
+        this.porcentajeParciales = v;
+    }
 }
