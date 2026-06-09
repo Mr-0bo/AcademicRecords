@@ -36,4 +36,8 @@ public class Alumno {
     public void setNombreCarrera(String nombreCarrera) {
         this.nombreCarrera = nombreCarrera;
     }
+    public String toString() {
+        String var10000 = this.getNombre();
+        return var10000 + " (" + this.matricula + ")";
+    }
 }
