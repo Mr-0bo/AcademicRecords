@@ -14,4 +14,7 @@ public class Administrador {
     public String getNumeroEmpleado() {
         return this.numeroEmpleado;
     }
+    public void setNumeroEmpleado(String numeroEmpleado) {
+        this.numeroEmpleado = numeroEmpleado;
+    }
 }
