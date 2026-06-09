@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.universidad.controller.AlumnoDashboardController"
+            styleClass="root-pane">
+
+    <!-- TOP BAR -->
+    <top>
+        <HBox styleClass="topbar" alignment="CENTER_LEFT" spacing="16">
+            <Label fx:id="lblBienvenida" text="Mis calificaciones" styleClass="topbar-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Cerrar sesión" onAction="#onCerrarSesion" styleClass="btn-logout"/>
+        </HBox>
+    </top>
