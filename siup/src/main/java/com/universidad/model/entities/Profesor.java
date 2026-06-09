@@ -12,4 +12,17 @@ public class Profesor {
         super(id, nombre, correo, contrasena, TipoUsuario.PROFESOR);
         this.numeroEmpleado = numeroEmpleado;
     }
+
+    public String getNumeroEmpleado() {
+        return this.numeroEmpleado;
+    }
+
+    public void setNumeroEmpleado(String numeroEmpleado) {
+        this.numeroEmpleado = numeroEmpleado;
+    }
+
+    public String toString() {
+        String var10000 = this.getNombre();
+        return var10000 + " [" + this.numeroEmpleado + "]";
+    }
 }
