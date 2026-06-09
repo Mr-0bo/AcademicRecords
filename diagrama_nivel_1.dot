@@ -1,0 +1,68 @@
+digraph DFD_Nivel_0 {
+
+graph [fontname="Arial", rankdir=LR, bgcolor="white", labelloc="t", fontsize=20, splines=ortho, nodesep=0.7, ranksep=1.0];
+node [fontname="Arial", fontsize=11, margin="0.12,0.08"];
+edge [fontname="Arial", fontsize=9, color="#374151", arrowsize=0.8];
+
+label="DFD - Nivel 0\nProcesos principales del sistema universitario";
+
+admin [shape=box, style="rounded,filled", fillcolor="#EEF2FF", color="#4F46E5", label="Administrador"];
+prof [shape=box, style="rounded,filled", fillcolor="#ECFDF5", color="#059669", label="Profesor"];
+alumno [shape=box, style="rounded,filled", fillcolor="#FFF7ED", color="#EA580C", label="Alumno"];
+
+p1 [shape=ellipse, style="filled", fillcolor="#F8FAFC", color="#111827", label="1.0\nAutenticar\nusuario"];
+p2 [shape=ellipse, style="filled", fillcolor="#F8FAFC", color="#111827", label="2.0\nAdministrar\ncatálogos académicos"];
+p3 [shape=ellipse, style="filled", fillcolor="#F8FAFC", color="#111827", label="3.0\nGestionar grupos\ne inscripciones"];
+p4 [shape=ellipse, style="filled", fillcolor="#F8FAFC", color="#111827", label="4.0\nConfigurar reglas\nde evaluación"];
+p5 [shape=ellipse, style="filled", fillcolor="#F8FAFC", color="#111827", label="5.0\nCapturar y calcular\ncalificaciones"];
+p6 [shape=ellipse, style="filled", fillcolor="#F8FAFC", color="#111827", label="6.0\nConsultar\ncalificaciones"];
+
+d1 [shape=cylinder, style="filled", fillcolor="#FEF3C7", color="#D97706", label="D1\nUsuarios y roles"];
+d2 [shape=cylinder, style="filled", fillcolor="#FEF3C7", color="#D97706", label="D2\nCarreras, materias,\nalumnos y profesores"];
+d3 [shape=cylinder, style="filled", fillcolor="#FEF3C7", color="#D97706", label="D3\nGrupos e\ninscripciones"];
+d4 [shape=cylinder, style="filled", fillcolor="#FEF3C7", color="#D97706", label="D4\nConfiguración de\nevaluación"];
+d5 [shape=cylinder, style="filled", fillcolor="#FEF3C7", color="#D97706", label="D5\nCalificaciones"];
+
+admin -> p1 [label="Correo y contraseña"];
+prof -> p1 [label="Correo y contraseña"];
+alumno -> p1 [label="Correo y contraseña"];
+p1 -> d1 [label="Consulta usuario"];
+d1 -> p1 [label="Hash, rol y datos"];
+p1 -> admin [label="Acceso a panel admin"];
+p1 -> prof [label="Acceso a panel profesor"];
+p1 -> alumno [label="Acceso a panel alumno"];
+
+admin -> p2 [label="Datos de alta/edición/baja"];
+p2 -> d2 [label="Guardar / actualizar / eliminar"];
+d2 -> p2 [label="Catálogos registrados"];
+p2 -> admin [label="Listados y confirmaciones"];
+
+admin -> p3 [label="Asignar profesor, materia, alumno y periodo"];
+p3 -> d2 [label="Consulta alumnos, profesores y materias"];
+d2 -> p3 [label="Datos académicos base"];
+p3 -> d3 [label="Guardar grupos e inscripciones"];
+d3 -> p3 [label="Grupos e inscritos"];
+p3 -> d5 [label="Crea calificación inicial"];
+p3 -> admin [label="Inscripción confirmada"];
+
+admin -> p4 [label="Porcentajes y mínima aprobatoria"];
+p4 -> d4 [label="Guardar configuración"];
+d4 -> p4 [label="Reglas por materia"];
+p4 -> admin [label="Validación de porcentajes"];
+
+prof -> p5 [label="Grupo seleccionado\nCalificaciones capturadas"];
+p5 -> d3 [label="Consulta inscritos"];
+d3 -> p5 [label="Alumnos por grupo"];
+p5 -> d4 [label="Consulta reglas"];
+d4 -> p5 [label="Porcentajes y mínima"];
+p5 -> d5 [label="Guardar parciales, promedio y estatus"];
+d5 -> p5 [label="Calificaciones actuales"];
+p5 -> prof [label="Promedio final y resultado"];
+
+alumno -> p6 [label="Solicitud de mis calificaciones"];
+p6 -> d3 [label="Consulta inscripciones del alumno"];
+d3 -> p6 [label="Inscripciones"];
+p6 -> d5 [label="Consulta calificaciones"];
+d5 -> p6 [label="Parciales, actividades, proyecto y final"];
+p6 -> alumno [label="Tabla de calificaciones y estatus"];
+}

@@ -1,0 +1,24 @@
+digraph DFD_Contexto {
+
+graph [fontname="Arial", rankdir=LR, bgcolor="white", labelloc="t", fontsize=20, splines=ortho, nodesep=0.7, ranksep=1.0];
+node [fontname="Arial", fontsize=11, margin="0.12,0.08"];
+edge [fontname="Arial", fontsize=9, color="#374151", arrowsize=0.8];
+
+label="DFD - Diagrama de Contexto\nSistema de Administración y Consulta de Calificaciones Universitarias";
+
+admin [shape=box, style="rounded,filled", fillcolor="#EEF2FF", color="#4F46E5", label="Administrador"];
+prof [shape=box, style="rounded,filled", fillcolor="#ECFDF5", color="#059669", label="Profesor"];
+alumno [shape=box, style="rounded,filled", fillcolor="#FFF7ED", color="#EA580C", label="Alumno"];
+
+sistema [shape=ellipse, style="filled", fillcolor="#F8FAFC", color="#111827", penwidth=2, width=3.6, height=1.6,
+label="Sistema Universitario\nJavaFX + SQLite\nAdministración y consulta\nde calificaciones"];
+
+admin -> sistema [label="Credenciales de acceso\nAltas / cambios / bajas\nAlumnos, profesores, carreras y materias"];
+sistema -> admin [label="Validación de acceso\nListados, confirmaciones\ny mensajes de error"];
+
+prof -> sistema [label="Credenciales\nSelección de grupo\nCaptura de parciales, actividades y proyecto"];
+sistema -> prof [label="Grupos asignados\nLista de alumnos\nPromedio final y estatus"];
+
+alumno -> sistema [label="Credenciales\nSolicitud de consulta de calificaciones"];
+sistema -> alumno [label="Calificaciones registradas\nPromedio final\nAprobado / Reprobado"];
+}

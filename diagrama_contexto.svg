@@ -1,0 +1,38 @@
+# Diagramas DFD - Proyecto Universidad
+
+Este paquete contiene los diagramas solicitados para el proyecto de administración y consulta de calificaciones universitarias.
+
+## Contenido
+
+- `00_Descripcion_del_Proyecto/descripcion_proyecto.md`
+- `01_Diagrama_de_Contexto/`
+  - Imagen PNG
+  - Imagen SVG
+  - Fuente DOT
+  - Fuente Mermaid
+  - Explicación en Markdown
+- `02_Diagrama_Nivel_0/`
+  - Imagen PNG
+  - Imagen SVG
+  - Fuente DOT
+  - Fuente Mermaid
+  - Explicación en Markdown
+- `03_Diagrama_Nivel_1/`
+  - Imagen PNG
+  - Imagen SVG
+  - Fuente DOT
+  - Fuente Mermaid
+  - Explicación en Markdown
+
+## Recomendación de entrega
+
+Para una tarea formal, se pueden usar directamente las imágenes `.png` y copiar las explicaciones de los archivos `.md`.
+
+## Base del análisis
+
+Los diagramas se construyeron revisando la estructura del proyecto JavaFX, especialmente:
+
+- Controladores: `LoginController`, `AdminDashboardController`, `ProfesorDashboardController`, `AlumnoDashboardController`.
+- Servicios: `AuthService`, `AdminService`, `EvaluacionService`.
+- Repositorios: usuarios, alumnos, profesores, carreras, materias, grupos, inscripciones, configuración y calificaciones.
+- Base de datos SQLite: tablas `usuario`, `alumno`, `profesor`, `administrador`, `carrera`, `materia`, `grupo`, `inscripcion`, `configuracion_evaluacion` y `calificacion`.

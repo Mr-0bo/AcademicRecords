@@ -1,0 +1,50 @@
+flowchart LR
+    Admin[Administrador]
+    Prof[Profesor]
+    Alumno[Alumno]
+
+    P1((1.0 Autenticar usuario))
+    P2((2.0 Administrar catálogos académicos))
+    P3((3.0 Gestionar grupos e inscripciones))
+    P4((4.0 Configurar reglas de evaluación))
+    P5((5.0 Capturar y calcular calificaciones))
+    P6((6.0 Consultar calificaciones))
+
+    D1[(D1 Usuarios y roles)]
+    D2[(D2 Catálogos académicos)]
+    D3[(D3 Grupos e inscripciones)]
+    D4[(D4 Configuración de evaluación)]
+    D5[(D5 Calificaciones)]
+
+    Admin --> P1
+    Prof --> P1
+    Alumno --> P1
+    P1 <--> D1
+    P1 --> Admin
+    P1 --> Prof
+    P1 --> Alumno
+
+    Admin --> P2
+    P2 <--> D2
+    P2 --> Admin
+
+    Admin --> P3
+    P3 <--> D2
+    P3 <--> D3
+    P3 --> D5
+    P3 --> Admin
+
+    Admin --> P4
+    P4 <--> D4
+    P4 --> Admin
+
+    Prof --> P5
+    P5 <--> D3
+    P5 <--> D4
+    P5 <--> D5
+    P5 --> Prof
+
+    Alumno --> P6
+    P6 <--> D3
+    P6 <--> D5
+    P6 --> Alumno

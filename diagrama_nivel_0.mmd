@@ -1,0 +1,8 @@
+flowchart LR
+    A[Administrador] -->|Credenciales, altas, cambios y bajas| S((Sistema Universitario
+JavaFX + SQLite))
+    S -->|Listados, validación y confirmaciones| A
+    P[Profesor] -->|Credenciales, grupo y calificaciones| S
+    S -->|Grupos, alumnos, promedio y estatus| P
+    AL[Alumno] -->|Credenciales y solicitud de consulta| S
+    S -->|Calificaciones, promedio final y estatus| AL
