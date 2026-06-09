@@ -1,7 +1,6 @@
-package main.java.com.universidad.model.entities;
+package com.universidad.model.entities;
 
 public class Usuario {
-  public class Usuario {
     private int id;
     private String nombre;
     private String correo;
