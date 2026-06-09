@@ -1,7 +1,6 @@
-package main.java.com.universidad.model.entities;
+package com.universidad.model.entities;
 
 public class ConfiguracionEvaluacion {
-  public class ConfiguracionEvaluacion {
     private int id;
     private int idMateria;
     private double porcentajeParciales;
