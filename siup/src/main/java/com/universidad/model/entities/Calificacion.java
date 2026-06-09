@@ -1,7 +1,6 @@
-package main.java.com.universidad.model.entities;
+package com.universidad.model.entities;
 
 public class Calificacion {
-  public class Calificacion {
     private int id;
     private int idInscripcion;
     private double parcial1;
