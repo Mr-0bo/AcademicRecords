@@ -31,4 +31,20 @@ public class Grupo {
         return this.idMateria;
     }
 
+    public int getIdProfesor() {
+        return this.idProfesor;
+    }
+
+    public void setIdProfesor(int idProfesor) {
+        this.idProfesor = idProfesor;
+    }
+
+    public String getPeriodo() {
+        return this.periodo;
+    }
+
+    public void setPeriodo(String periodo) {
+        this.periodo = periodo;
+    }
+            
 }
