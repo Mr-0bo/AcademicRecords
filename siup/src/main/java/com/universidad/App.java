@@ -12,6 +12,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        com.universidad.util.NavigationUtil.setPrimaryStage(primaryStage);
         URL fxmlLocation = getClass().getResource("/com/universidad/fxml/login.fxml");
 
         if (fxmlLocation == null) {
