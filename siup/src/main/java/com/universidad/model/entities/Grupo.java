@@ -46,5 +46,25 @@ public class Grupo {
     public void setPeriodo(String periodo) {
         this.periodo = periodo;
     }
-            
+
+      public String getNombreMateria() {
+        return this.nombreMateria;
+    }
+
+    public void setNombreMateria(String nombreMateria) {
+        this.nombreMateria = nombreMateria;
+    }
+
+    public String getNombreProfesor() {
+        return this.nombreProfesor;
+    }
+
+    public void setNombreProfesor(String nombreProfesor) {
+        this.nombreProfesor = nombreProfesor;
+    }
+
+       public String toString() {
+        String var10000 = this.nombreMateria != null ? this.nombreMateria : "Grupo " + this.id;
+        return var10000 + " — " + this.periodo;
+    }
 }
