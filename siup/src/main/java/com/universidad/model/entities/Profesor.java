@@ -23,7 +23,6 @@ public class Profesor extends Usuario {
     }
 
     public String toString() {
-        String var10000 = this.getNombre();
-        return var10000 + " [" + this.numeroEmpleado + "]";
+        return getNombre() + " [" + this.numeroEmpleado + "]";
     }
 }
