@@ -75,4 +75,12 @@ public class ConfiguracionEvaluacion {
     public void setCalificacionMinima(double v) {
         this.calificacionMinima = v;
     }
+
+    public int getFaltasMaximas() {
+        return this.faltasMaximas;
+    }
+
+    public void setFaltasMaximas(int v) {
+        this.faltasMaximas = v;
+    }
 }
