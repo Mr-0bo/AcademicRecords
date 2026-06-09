@@ -138,3 +138,4 @@ public class UsuarioRepository implements BaseRepository<Usuario, Integer> {
                 tipo
         );
     }
+}
