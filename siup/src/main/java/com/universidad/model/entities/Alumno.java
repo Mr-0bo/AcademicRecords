@@ -14,4 +14,15 @@ public class Alumno {
         this.matricula = matricula;
         this.idCarrera = idCarrera;
     }
+    public String getMatricula() {
+        return this.matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public int getIdCarrera() {
+        return this.idCarrera;
+    }
 }
