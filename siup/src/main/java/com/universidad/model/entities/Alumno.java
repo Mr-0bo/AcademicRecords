@@ -1,5 +1,7 @@
 package com.universidad.model.entities;
 
+import com.universidad.model.enums.TipoUsuario;
+
 public class Alumno extends Usuario {
     private String matricula;
     private int idCarrera;
