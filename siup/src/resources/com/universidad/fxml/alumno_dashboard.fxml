@@ -17,3 +17,26 @@
             <Button text="Cerrar sesión" onAction="#onCerrarSesion" styleClass="btn-logout"/>
         </HBox>
     </top>
+
+    <!-- CONTENIDO -->
+    <center>
+        <VBox spacing="16" styleClass="tab-section">
+            <Label text="Historial de calificaciones" styleClass="section-title"/>
+
+            <TableView fx:id="tablaCalificaciones" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="colMateria"     text="Materia"      prefWidth="200"/>
+                    <TableColumn fx:id="colPeriodo"     text="Periodo"      prefWidth="90"/>
+                    <TableColumn fx:id="colP1"          text="Parcial 1"    prefWidth="80"/>
+                    <TableColumn fx:id="colP2"          text="Parcial 2"    prefWidth="80"/>
+                    <TableColumn fx:id="colP3"          text="Parcial 3"    prefWidth="80"/>
+                    <TableColumn fx:id="colActividades" text="Actividades"  prefWidth="90"/>
+                    <TableColumn fx:id="colProyecto"    text="Proyecto"     prefWidth="80"/>
+                    <TableColumn fx:id="colFinal"       text="Final"        prefWidth="70"/>
+                    <TableColumn fx:id="colEstatus"     text="Estatus"      prefWidth="100"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>
+
