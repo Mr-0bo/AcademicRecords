@@ -11,4 +11,7 @@ public class Administrador {
         super(id, nombre, correo, contrasena, TipoUsuario.ADMIN);
         this.numeroEmpleado = numeroEmpleado;
     }
+    public String getNumeroEmpleado() {
+        return this.numeroEmpleado;
+    }
 }
