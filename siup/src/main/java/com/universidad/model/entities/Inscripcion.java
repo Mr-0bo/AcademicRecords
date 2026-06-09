@@ -1,7 +1,6 @@
-package main.java.com.universidad.model.entities;
+package com.universidad.model.entities;
 
 public class Inscripcion {
-  public class Inscripcion {
     private int id;
     private int idAlumno;
     private int idGrupo;
