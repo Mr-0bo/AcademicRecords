@@ -27,3 +27,17 @@
             <Label text="Contraseña" styleClass="form-label"/>
             <PasswordField fx:id="txtContrasena" promptText="••••••••"
                            styleClass="form-input"/>
+<Button text="Ingresar al sistema"
+                    styleClass="btn-primary"
+                    maxWidth="Infinity"
+                    onAction="#onIngresar" />
+        </VBox>
+
+        <VBox alignment="CENTER" spacing="4" styleClass="login-hint">
+            <Label text="Credenciales de prueba:" styleClass="hint-title"/>
+            <Label text="admin@uni.edu  /  alumno@uni.edu  /  profesor@uni.edu" styleClass="hint-text"/>
+            <Label text="Contraseña de todas: admin123" styleClass="hint-text"/>
+        </VBox>
+
+    </VBox>
+</StackPane>
