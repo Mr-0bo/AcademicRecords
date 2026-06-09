@@ -61,5 +61,25 @@ public class Calificacion {
     public void setParcial3(double parcial3) {
         this.parcial3 = parcial3;
     }
-    
+
+        public double getActividades() {
+        return this.actividades;
+    }
+
+    public void setActividades(double actividades) {
+        this.actividades = actividades;
+    }
+
+    public double getProyecto() {
+        return this.proyecto;
+    }
+
+    public void setProyecto(double proyecto) {
+        this.proyecto = proyecto;
+    }
+
+    public double getPromedioFinal() {
+        return this.promedioFinal;
+    }
+
 }
