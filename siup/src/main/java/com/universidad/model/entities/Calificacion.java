@@ -37,5 +37,29 @@ public class Calificacion {
     public void setIdInscripcion(int idInscripcion) {
         this.idInscripcion = idInscripcion;
     }
+
+    public double getParcial1() {
+        return this.parcial1;
+    }
+
+    public void setParcial1(double parcial1) {
+        this.parcial1 = parcial1;
+    }
+
+    public double getParcial2() {
+        return this.parcial2;
+    }
+
+    public void setParcial2(double parcial2) {
+        this.parcial2 = parcial2;
+    }
+
+    public double getParcial3() {
+        return this.parcial3;
+    }
+
+    public void setParcial3(double parcial3) {
+        this.parcial3 = parcial3;
+    }
     
 }
