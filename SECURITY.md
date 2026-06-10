@@ -424,7 +424,8 @@ Equipo responsable del proyecto:
 * Gabriel Espinosa
 * Mario Garcia 
 * Rafael Morales
-
+* Iancarlo Sigler
+  
 ---
 
 ## Final Note
