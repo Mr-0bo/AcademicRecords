@@ -531,6 +531,7 @@ Proyecto desarrollado como parte de una actividad académica de Programación Or
 Nombre: Rafael Morales
 Nombre: Mario Garcia
 Nombre: Omar Espinosa
+Nombre: Iancarlo Sigler
 Carrera: Ingeniería en Sistemas Computacionales
 ```
 
