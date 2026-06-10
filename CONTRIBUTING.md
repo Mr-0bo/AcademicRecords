@@ -744,7 +744,8 @@ Este proyecto fue desarrollado de manera colaborativa por:
 * Gabriel Espinosa
 * Mario Garcia 
 * Rafael Morales 
-
+* Iancarlo Sigler
+  
 Cada integrante participó en módulos específicos del sistema, contribuyendo al desarrollo de una aplicación estructurada y funcional.
 
 ---
